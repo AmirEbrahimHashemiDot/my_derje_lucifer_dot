@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#202F65</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="loginFormDetails">#ccffffff</color>
+    <color name="loginFormDetailsLight">#1affffff</color>
+    <color name="loginFormDetailsMedium">#66ffffff</color>
+    <color name="main_background">#E8F4F8</color>
+    <color name="webview_color">#202F65</color>
+
+</resources>

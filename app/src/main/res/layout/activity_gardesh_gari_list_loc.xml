@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".GardeshGariSubActivity.GardeshGariListLocActivity">
+
+
+    <Button
+        android:id="@+id/btn_goto_homeactivity_from_list_amaken_loc"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txtlistagahi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="لیست اَماکِن گَردِشگَری"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview_agahi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtlistagahi">
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="32dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_rosta_khor"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/rosta_kor_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="روستای خور"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_abshar"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/abshar_khor_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="آبشار"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_tanorestan"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/nanvaii_tafton_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="تنورستان"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_tape_dozdbar"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/sardozdbar_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="تپه تاریخی دزدبر"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_emam_zade"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/emam_zade_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="امامزاده"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_sangha_qadimi"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/defult_image_icon_l"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="محوطه سنگ های قدیمی"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_gelochak"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/gelochak_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="گلوچاک"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_khor_dare"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/khor_dare_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="خور دره"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_mile_akar_eski"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/pistsky_khor"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="انتهاي پيست اسكي ميله آخر"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_isme_cheshme"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/isme_cheshme_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="ایسمه چشمه"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="60dp"
+                app:cardCornerRadius="12sp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/btn_loc_list_zamin_fotbal"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/zamin_fotball_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp"
+                        android:text="زمین فوتبال"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

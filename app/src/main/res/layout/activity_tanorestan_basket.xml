@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".Baskets.TanorestanBasket.TanorestanBasket">
+
+    <Button
+        android:id="@+id/btn_gobackto_home_from_tanor_basket"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:id="@+id/txt_basket_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/iransans"
+        android:text="سبد خرید تَنورِستان"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <!--<TextView
+        android:id="@+id/txt_view_basket_array_count"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txt_basket_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/white" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tanorestan_basket_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/card_karid"
+        android:layout_below="@+id/txt_basket_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_karid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="12dp">
+
+        <Button
+            android:id="@+id/btn_karid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#95A3C1"
+            android:fontFamily="@font/iransans"
+            android:text="تکمیل خرید" />
+        <!--style="@style/setFont"-->
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_below="@+id/tanorestan_basket_rcv"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:background="@drawable/price_sum_shape"
+        android:fontFamily="@font/iransans"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/txt_view_basket_array_count"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

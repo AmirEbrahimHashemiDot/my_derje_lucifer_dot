@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgapps"
+    tools:context=".MainMenuActivitys.HiperMarketActivity">
+
+    <Button
+        android:id="@+id/btn_goto_homeactivity_from_hiper"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txtlistagahi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="امیر حسنی تلفن:"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryscrview_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_goto_homeactivity_from_hiper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ryscrview_category"
+        android:id="@+id/img_arrow_cat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+    <TextView
+        android:textColor="#B2C6AD"
+        android:textStyle="italic|bold"
+        android:textSize="12sp"
+        android:gravity="center_vertical|center_horizontal"
+
+        android:id="@+id/txt_test_var"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_below="@+id/img_arrow_cat"
+        android:layout_centerHorizontal="true" />
+    <!--style="@style/setFont"-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryscrview_product"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_below="@+id/txt_test_var"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp" />
+
+    <ImageView
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/btn_takmil_karid"
+
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_shopping_cart_black_24dp"
+        android:text="سبد خرید" />
+    <!--style="@style/setFont"-->
+
+    <TextView
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignBottom="@+id/btn_takmil_karid"
+        android:layout_alignTop="@+id/btn_takmil_karid"
+        android:text="سبد خرید"
+        android:layout_toLeftOf="@+id/btn_takmil_karid"
+        android:id="@+id/txt_sabad_karid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    android:icon="@drawable/ic_home_black_24dp"
+    android:icon="@drawable/ic_dashboard_black_24dp"
+    -->
+
+        <item
+            android:id="@+id/navigation_shora_view"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="شورا" />
+
+        <item
+            android:id="@+id/navigation_dehyari_view"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="دهیاری" />
+
+</menu>

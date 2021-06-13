@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".MainMenuActivitys.MahsolatDehkadeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_goto_home_from_mahsolat_dehkade"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:id="@+id/txtlistagahi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="محصولات دهکده"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <!--<ImageView
+            android:id="@+id/btn_sabad_karid_from_mahsolat_dehkade"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_shopping_cart_black_24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:text="سبد خرید" />-->
+        <!--style="@style/setFont"-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/_mahsol_deh_lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/mahsol_deh_tab_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#118E1E"
+            app:tabMode="fixed"
+            app:tabTextColor="#FFFFFF">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mahsolat_dehkade_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tanorestan_shorcut_basket_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tanorestan_basket_lin_shurtcut_card"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:cardBackgroundColor="#EFF0F3"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/btn_add_pro_itemto_sefaresh_basket"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tanor_text_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/iransans"
+            android:text="سبد خرید تنورستان"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

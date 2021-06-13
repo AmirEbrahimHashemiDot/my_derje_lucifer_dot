@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@mipmap/android_bg_3"-->
+    <!--android:background="@mipmap/bgapps"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_toStartOf="@+id/right_menu_buttons"
+        android:background="@color/loginFormDetails">
+
+        <RelativeLayout
+            android:id="@+id/top_home_heder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20sp">
+
+            <!--<TextView
+                android:id="@+id/app_name_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="دِرجه"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />-->
+
+            <!--<TextView
+                android:id="@+id/app_name_desk_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_name_home"
+                android:layout_alignParentRight="true"
+                android:text="دریچه ای برای دیده شدن"
+                android:textColor="#52BAFF"
+                android:textSize="14sp" />-->
+
+            <ImageView
+                android:id="@+id/img_main_logo_viewer"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/new2_derje_logo_home"
+                android:scaleType="centerCrop" />
+
+            <!--android:padding="45dp"-->
+            <!--android:src="@drawable/new2_derje_logo_home"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:padding="58dp"-->
+
+            <TextView
+                android:id="@+id/app_name_desk_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_main_logo_viewer"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/iransans"
+                android:text="دریچه ای برای دیده شدن"
+                android:textColor="#01B1BE"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/main_home_scrool_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_home_heder"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/loginFormDetails">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_menu_buttons"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/loginFormDetails">
+
+        <!--android:background="@color/loginFormDetails"-->
+        <!--android:background="#F0F0F0"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/side_menu_home_bc_shape"
+            android:orientation="vertical">
+
+            <!--android:background="#01B1BE"-->
+            <!--android:background="#9F0BA14B"-->
+            <!--android:background="#01B1BE"-->
+            <!--0BA14B-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="60dp">
+
+                <Button
+                    android:id="@+id/side_menu_phone_call_to_derje"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_phone_call"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/sub_txt_tamas_derje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="تماس با درجه"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="60dp">
+
+                <Button
+                    android:id="@+id/side_menu_load_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_website_icon"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/sub_txt_load_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="سایت"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="60dp">
+
+                <Button
+                    android:id="@+id/side_menu_mahsolat_dehkade"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_wilage_icon"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/sub_txt_mahsolat_dehkade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="محصولات دهکده"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="60dp">
+
+                <Button
+
+                    android:id="@+id/side_menu_gardesh_gari"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_tourism_icon"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/sub_txt_gardesh_gari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="گردشگری"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <!-- <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tool="http://schemas.android.com/tools"
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bgapps">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/app_name_home"
+                    android:text="دِرجه"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/app_name_home"
+                    android:id="@+id/app_name_desk_home"
+                    android:textColor="#52BAFF"
+                    android:textSize="14sp"
+                    android:text="دریچه ای برای دیده شدن"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="35dp"
+                    android:id="@+id/btn_link_to_site"
+                    android:src="@drawable/logo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"/>
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_marginBottom="55dp"
+                android:columnCount="2"
+                android:rowCount="7"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_agahi_ha"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/agahi_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="آگهی ها"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_mahsolat_dehkade"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/hiper_markt"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="محصولات دهکده"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_radiabi"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/hiper_markt"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="تَنورِستان"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_sefaresh"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/mive_taze"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="خرید میوه تازه"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_shora_va_dehyari"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/shora_dehyari"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="شورا و دهیاری"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_khor_news"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/khor_news_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="خور NEWS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_riz_kharidha"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/rizkarid"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="ریز خرید ها"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_list_alayeq"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/alayq"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="علایق"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_tabiat_rosta"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/alayq"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="طبیعت روستا"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_cart_visit"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/cart_visit"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="بانک مشاغل"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_telefon_zarory"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/ertebat"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="تلفن های ضروری"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/ertebat_ba_derje_home"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/ertebat_derje"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="ارتباط با دِرجه"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_maharatha"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/maharat"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="مهارت ها"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_berim_khor"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/berimkor"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="گَردِشگَری"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_amaliat_pardakt"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/pardakt"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="عملیات پرداخت"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_vazayefvadarkast"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/vazayaf_darkast"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="وظایف"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_havashenasi"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/hava"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="هواشناسی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_settings"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/tanzimat"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="تنظیمات"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>&ndash;&gt;
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_kadamat_keshavarzi"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/kadamat_keshavarzi"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="خدمات روستایی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_kadamat_amozesh_qaza_mahali"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/qaza_mahali_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="آموزش غذاهای\n   محلی"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="60dp"
+                    app:cardCornerRadius="12sp"
+                    android:layout_margin="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_admin_login"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/account_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_marginTop="12dp"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp"
+                            android:text="پَنِل کاربری"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        &lt;!&ndash;&lt;!&ndash;<TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;
+        &lt;!&ndash;
+        <Button
+            android:background="@drawable/logo"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_link_to_site"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="لینک سایت"
+            android:layout_below="@+id/btn_link_to_site"
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        &ndash;&gt;
+
+        <Button
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn_admin_login"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <Button
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/ic_settings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn_settings"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <Button
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/btn_link_to_site"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txt_linktosite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_link_to_site"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_link_to_site"
+            android:textSize="18sp" />
+
+        &lt;!&ndash;<LinearLayout
+            android:layout_below="@+id/txt_linktosite"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_agahi_ha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_agahi_ha"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_riz_kharidha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_riz_kharid"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_sefaresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_sefaresh_gozari"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_shora_va_dehyari"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_shorayari"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_list_alayeq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_list_alayeq"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp">
+
+                <Button
+                    android:fontFamily="@font/app_font"
+                    android:id="@+id/btn_ertebat_ba_derje"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_ertebat_ba_derje"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>&ndash;&gt;
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/lin_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_linktosite"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ScrollView
+                android:fillViewport="false"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_agahi_ha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_agahi_ha"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_riz_kharidha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_riz_kharid"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_sefaresh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_sefaresh_gozari"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_shorayari"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="شورایاری"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_berim_khor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="بریم خور"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_vazayefvadarkast"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="وظایف,درخواست"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_shora_va_dehyari"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_shorayari"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_list_alayeq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_list_alayeq"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_radiabi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="ردیابی"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_maharatha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="مهارت ها"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_amaliat_pardakt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="عملیات پرداخت"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_havashenasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="هواشناسی"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>&ndash;&gt;
+
+    </ScrollView>-->

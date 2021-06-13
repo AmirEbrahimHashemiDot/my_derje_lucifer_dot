@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="12sp"
+    android:layout_margin="12dp"
+    android:id="@+id/main_home_item_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+
+    <LinearLayout
+        android:weightSum="6"
+        android:id="@+id/main_home_item_linlay"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="5"
+            android:scaleType="fitCenter"
+            android:id="@+id/main_home_item_imgview"
+            android:src="@drawable/defult_image_icon_l"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/main_home_item_txtview"
+            android:layout_marginTop="12dp"
+            android:textColor="#6f6f6f"
+            android:textSize="12sp"
+            android:text="محصول"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

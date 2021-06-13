@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".ApardaktSubActivitys.QrCodeActivity">
+
+    <Button
+        android:id="@+id/btn_goto_amaliat_from_qrcode"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txtqrcode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="پرداخت QR Code"
+        android:textSize="24sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtqrcode_title"
+        tools:context=".ApardaktSubActivitys.QrCodeActivity">
+
+        <!--<TextView
+            android:layout_marginTop="32dp"
+            android:textColor="#872A2A"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:text="برای شروع کادر را لَمس کنید."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>-->
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@android:color/white"
+            app:frameCornersRadius="16dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.75"
+            app:frameThickness="2dp"
+            app:maskColor="#804E8ECC" />
+
+    </FrameLayout>
+
+</RelativeLayout>

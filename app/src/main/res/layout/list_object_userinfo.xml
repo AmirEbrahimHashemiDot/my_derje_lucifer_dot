@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_of_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#E0F7FA" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#EDE7F6" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#E0F7FA" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/imagename"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#EDE7F6" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/admin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#E0F7FA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#EDE7F6" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/evidence"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#E0F7FA" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#EDE7F6" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/graduate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#E0F7FA" />
+
+            <TextView
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/foldername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#EDE7F6" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_below="@+id/top_of_line"
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="#A5A5A8" />
+
+</RelativeLayout>

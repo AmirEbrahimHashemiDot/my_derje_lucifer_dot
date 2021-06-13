@@ -1,0 +1,2551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F4F8">
+
+    <!--<TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--
+    <Button
+        android:background="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_link_to_site"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="لینک سایت"
+        android:layout_below="@+id/btn_link_to_site"
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    -->
+
+    <Button
+        android:background="@drawable/ic_account_circle_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/btn_admin_login"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <Button
+        android:background="@drawable/ic_settings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/btn_settings"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <Button
+        android:id="@+id/btn_link_to_site"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_linktosite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_link_to_site"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_link_to_site"
+        android:textSize="18sp" />
+
+    <!--<LinearLayout
+        android:layout_below="@+id/txt_linktosite"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_agahi_ha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_agahi_ha"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_riz_kharidha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_riz_kharid"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_sefaresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_sefaresh_gozari"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_shora_va_dehyari"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_shorayari"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_list_alayeq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_list_alayeq"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp">
+
+            <Button
+                android:fontFamily="@font/app_font"
+                android:id="@+id/btn_ertebat_ba_derje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_ertebat_ba_derje"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/lin_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_linktosite"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ScrollView
+                android:fillViewport="false"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_agahi_ha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_agahi_ha"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_riz_kharidha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_riz_kharid"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_sefaresh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_sefaresh_gozari"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_shorayari"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="شورایاری"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_berim_khor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="بریم خور"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_vazayefvadarkast"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="وظایف,درخواست"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_shora_va_dehyari"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_shorayari"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_list_alayeq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="@string/btn_list_alayeq"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_radiabi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="ردیابی"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_maharatha"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="مهارت ها"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_amaliat_pardakt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="عملیات پرداخت"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="16dp"
+                        app:cardCornerRadius="16dp">
+
+                        <Button
+                            android:fontFamily="@font/app_font"
+                            android:id="@+id/btn_havashenasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="هواشناسی"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+//------------------------------------------------------------------------------------
+//sefaresh gozari actvt * avalin test server va daryaft etelat user ha az sever
+
+package com.example.test.botom_nav_test;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.test.botom_nav_test.Adapter.UserInfoAdapter;
+import com.example.test.botom_nav_test.Model.UserInfo;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SefareshGozariActivity extends AppCompatActivity {
+
+    Button btn_goto_homeactivity;
+    RecyclerView ryscrview_show_data;
+    String url = "http://171.22.27.135:9096/api/Person/GetInfoUser";
+    List<UserInfo> userInfoslist;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sefaresh_gozari);
+
+        Toast.makeText(this, "لطفا کمی صبر کنید.", Toast.LENGTH_SHORT).show();
+
+        setUpViews();
+
+        btn_goto_homeactivity = (Button) findViewById(R.id.btn_goto_homeactivity);
+        btn_goto_homeactivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SefareshGozariActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        //*
+        getalluser();
+    }
+
+    private void setUpViews() {
+        userInfoslist = new ArrayList<>();
+        ryscrview_show_data = (RecyclerView) findViewById(R.id.ryscrview_show_data);
+        ryscrview_show_data.setLayoutManager(new LinearLayoutManager(SefareshGozariActivity.this));
+    }
+
+    private void getalluser() {
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+
+                try {
+                    //JSONArray jsonArray = new JSONArray(response);
+                    for (int i = 0; i < response.length(); i++) {
+                        JSONObject jsonObject = response.getJSONObject(i);
+                        UserInfo userInfo = new UserInfo();
+                        //****
+                        userInfo.setFirstName(jsonObject.getString("FirstName"));
+                        userInfo.setLastName(jsonObject.getString("LastName"));
+                        userInfo.setUserId(jsonObject.getString("UserId"));
+                        userInfo.setAdmin(jsonObject.getString("Admin"));
+                        userInfo.setBirthDay(jsonObject.getString("BirthDay"));
+                        userInfo.setEvidence(jsonObject.getString("Evidence"));
+                        userInfo.setCompany(jsonObject.getString("Company"));
+                        userInfo.setGraduate(jsonObject.getString("Graduate"));
+                        userInfo.setFolderName(jsonObject.getString("FolderName"));
+                        userInfo.setImageName(jsonObject.getString("ImageName"));
+                        //****
+                        userInfoslist.add(userInfo);
+                        //Toast.makeText(SefareshGozariActivity.this, "Successful :)", Toast.LENGTH_SHORT).show();
+                    }
+                    ryscrview_show_data.setAdapter(new UserInfoAdapter(SefareshGozariActivity.this, userInfoslist));
+                } catch (JSONException e) {
+                    Toast.makeText(SefareshGozariActivity.this, "error", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(SefareshGozariActivity.this, "Error in connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SefareshGozariActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        request.setRetryPolicy(new DefaultRetryPolicy(5000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(request);
+
+    }
+}
+
+//--------------------------------------------- mldel userinfo avalin test server user info
+
+package com.example.test.botom_nav_test.Model;
+
+public class UserInfo {
+
+    private String FirstName;
+    private String LastName;
+    private String UserId;
+    private String Admin;
+    private String BirthDay;
+    private String Evidence;
+    private String Company;
+    private String Graduate;
+    private String FolderName;
+    private String ImageName;
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String firstName) {
+        FirstName = firstName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    public String getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(String userId) {
+        UserId = userId;
+    }
+
+    public String getAdmin() {
+        return Admin;
+    }
+
+    public void setAdmin(String admin) {
+        Admin = admin;
+    }
+
+    public String getBirthDay() {
+        return BirthDay;
+    }
+
+    public void setBirthDay(String birthDay) {
+        BirthDay = birthDay;
+    }
+
+    public String getEvidence() {
+        return Evidence;
+    }
+
+    public void setEvidence(String evidence) {
+        Evidence = evidence;
+    }
+
+    public String getCompany() {
+        return Company;
+    }
+
+    public void setCompany(String company) {
+        Company = company;
+    }
+
+    public String getGraduate() {
+        return Graduate;
+    }
+
+    public void setGraduate(String graduate) {
+        Graduate = graduate;
+    }
+
+    public String getFolderName() {
+        return FolderName;
+    }
+
+    public void setFolderName(String folderName) {
+        FolderName = folderName;
+    }
+
+    public String getImageName() {
+        return ImageName;
+    }
+
+    public void setImageName(String imageName) {
+        ImageName = imageName;
+    }
+}
+
+//------------------------------------------------adapter avalin test server
+
+package com.example.test.botom_nav_test.Adapter;
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.test.botom_nav_test.Model.UserInfo;
+import com.example.test.botom_nav_test.R;
+
+import org.w3c.dom.Text;
+
+import java.util.List;
+
+public class UserInfoAdapter extends RecyclerView.Adapter<UserInfoAdapter.userInfoViewHolder> {
+
+    List<UserInfo> list_u;
+    Context context;
+
+    public UserInfoAdapter(Context context, List<UserInfo> userInfoList) {
+        this.context = context;
+        this.list_u = userInfoList;
+    }
+
+    @NonNull
+    @Override
+    public userInfoViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(context).inflate(R.layout.list_object_userinfo, viewGroup, false);
+        return new userInfoViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull userInfoViewHolder holder, int position) {
+        UserInfo userInfo = list_u.get(position);
+
+        holder.lastname.setText(userInfo.getFirstName());
+        holder.firstname.setText(userInfo.getLastName());
+        holder.userid.setText(userInfo.getUserId());
+        holder.admin.setText(userInfo.getAdmin());
+        holder.birthday.setText(userInfo.getBirthDay());
+        holder.evidence.setText(userInfo.getEvidence());
+        holder.company.setText(userInfo.getCompany());
+        holder.graduate.setText(userInfo.getGraduate());
+        holder.foldername.setText(userInfo.getFolderName());
+        holder.imagename.setText(userInfo.getImageName());
+    }
+
+    @Override
+    public int getItemCount() {
+        return list_u.size();
+    }
+
+    public class userInfoViewHolder extends RecyclerView.ViewHolder {
+
+        String id;
+        TextView firstname, lastname, userid, admin, birthday, evidence, company, graduate, foldername, imagename;
+
+        public userInfoViewHolder(@NonNull View itemView) {
+            super(itemView);
+            firstname = (TextView) itemView.findViewById(R.id.firstname);
+            lastname = (TextView) itemView.findViewById(R.id.lastname);
+            userid = (TextView) itemView.findViewById(R.id.userid);
+            admin = (TextView) itemView.findViewById(R.id.admin);
+            birthday = (TextView) itemView.findViewById(R.id.birthday);
+            evidence = (TextView) itemView.findViewById(R.id.evidence);
+            company = (TextView) itemView.findViewById(R.id.company);
+            graduate = (TextView) itemView.findViewById(R.id.graduate);
+            foldername = (TextView) itemView.findViewById(R.id.foldername);
+            imagename = (TextView) itemView.findViewById(R.id.imagename);
+        }
+    }
+}
+
+
+//----------------------------------------------------- RyvCatAdapter 19.11.98_12:06
+
+package com.example.test.botom_nav_test.Adapter;
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.test.botom_nav_test.Model.RyvCatModel;
+import com.example.test.botom_nav_test.R;
+
+import java.util.ArrayList;
+
+public class RyvCatAdapter extends RecyclerView.Adapter<RyvCatAdapter.RyvCatAdapter_ViewHolder> {
+    private Context mcontext;
+    private ArrayList<RyvCatModel> model_item_list;
+
+    public RyvCatAdapter(Context context, ArrayList<RyvCatModel> item_list) {
+        mcontext = context;
+        model_item_list = item_list;
+    }
+
+    @NonNull
+    @Override
+    public  onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View v = LayoutInflater.from(mcontext).inflate(R.layout.cat_ryv_item,viewGroup, false);
+        return new RyvCatAdapter_ViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RyvCatAdapter_ViewHolder ryvCatAdapter_viewHolder, int i) {
+        int $id = currentItem.get$id();
+        String Name = currentItem.getName();
+        int ID = currentItem.getID();
+    }
+
+    @Override
+    public int getItemCount() {
+        return model_item_list.size();
+    }
+
+    public class RyvCatAdapter_ViewHolder extends RecyclerView.ViewHolder {
+
+        public ImageView img_view_ryv_cat_item;
+        public TextView txt_view_ryv_cat_item;
+
+        public RyvCatAdapter_ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            img_view_ryv_cat_item = itemView.findViewById(R.id.img_view_ryv_cat_item);
+            txt_view_ryv_cat_item = itemView.findViewById(R.id.txt_view_ryv_cat_item);
+            //castObjects();
+        }
+
+        private void castObjects() {
+            img_view_ryv_cat_item = itemView.findViewById(R.id.img_view_ryv_cat_item);
+            txt_view_ryv_cat_item = itemView.findViewById(R.id.txt_view_ryv_cat_item);
+        }
+    }
+
+}
+//----------------------------------------------------------------- activity_sefaresh_gozari 20.11.98/02:30pm
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F4F8"
+    tools:context=".SefareshGozariActivity">
+
+    <Button
+        android:id="@+id/btn_goto_homeactivity"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:id="@+id/txtlistagahi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/btn_sefaresh_gozari"
+        android:textSize="24sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/ryscrview_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/btn_goto_homeactivity"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#D3F1FC"
+        android:id="@+id/ryscrview_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ryscrview_category"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"/>
+
+    <Button
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_takmil_karid"
+        style="@style/setFont"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_sefareshgozari_shape"
+        android:text="تکمیل خرید" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ryscrview_product"
+        android:background="#ECBFBF"
+        android:id="@+id/txt_test_var"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>
+
+//-------------------------------------------------------------------
+
+//get all users class
+    /*
+
+private void getalluser() {
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+
+                try {
+                    //JSONArray jsonArray = new JSONArray(response);
+                    for (int i = 0; i < response.length(); i++) {
+                        JSONObject jsonObject = response.getJSONObject(i);
+                        UserInfo userInfo = new UserInfo();
+                        //****
+                        userInfo.setFirstName(jsonObject.getString("FirstName"));
+                        userInfo.setLastName(jsonObject.getString("LastName"));
+                        userInfo.setUserId(jsonObject.getString("UserId"));
+                        userInfo.setAdmin(jsonObject.getString("Admin"));
+                        userInfo.setBirthDay(jsonObject.getString("BirthDay"));
+                        userInfo.setEvidence(jsonObject.getString("Evidence"));
+                        userInfo.setCompany(jsonObject.getString("Company"));
+                        userInfo.setGraduate(jsonObject.getString("Graduate"));
+                        userInfo.setFolderName(jsonObject.getString("FolderName"));
+                        userInfo.setImageName(jsonObject.getString("ImageName"));
+                        //****
+                        userInfoslist.add(userInfo);
+                        //Toast.makeText(SefareshGozariActivity.this, "Successful :)", Toast.LENGTH_SHORT).show();
+                    }
+                    ryscrview_show_data.setAdapter(new UserInfoAdapter(SefareshGozariActivity.this, userInfoslist));
+                } catch (JSONException e) {
+                    Toast.makeText(SefareshGozariActivity.this, "error", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(SefareshGozariActivity.this, "Error in connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SefareshGozariActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        request.setRetryPolicy(new DefaultRetryPolicy(5000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(request);
+    }
+
+    */
+
+    //---------- SefareshGozariActivity whit all comments 04.12.98/02:45PM
+
+    package com.example.test.botom_nav_test;
+
+    import android.content.Intent;
+    import android.os.AsyncTask;
+    import android.os.Handler;
+    import android.support.v7.app.AppCompatActivity;
+    import android.os.Bundle;
+    import android.support.v7.widget.LinearLayoutManager;
+    import android.support.v7.widget.RecyclerView;
+    import android.util.Log;
+    import android.view.View;
+    import android.view.textclassifier.TextLinks;
+    import android.widget.AdapterView;
+    import android.widget.ArrayAdapter;
+    import android.widget.Button;
+    import android.widget.TextView;
+    import android.widget.Toast;
+
+    import com.android.volley.DefaultRetryPolicy;
+    import com.android.volley.Request;
+    import com.android.volley.RequestQueue;
+    import com.android.volley.Response;
+    import com.android.volley.VolleyError;
+    import com.android.volley.toolbox.JsonArrayRequest;
+    import com.android.volley.toolbox.StringRequest;
+    import com.android.volley.toolbox.Volley;
+    import com.example.test.botom_nav_test.Adapter.ExampleAdapter_ProRyv;
+    import com.example.test.botom_nav_test.Adapter.ExampleAdapter_Ryv;
+    import com.example.test.botom_nav_test.Adapter.UserInfoAdapter;
+    import com.example.test.botom_nav_test.Model.CategoryModel;
+    import com.example.test.botom_nav_test.Model.ExampleItem_ProModel;
+    import com.example.test.botom_nav_test.Model.ExampleItem_model;
+    import com.example.test.botom_nav_test.Model.UserInfo;
+
+    import org.json.JSONArray;
+    import org.json.JSONException;
+    import org.json.JSONObject;
+
+    import java.util.ArrayList;
+    import java.util.HashMap;
+    import java.util.List;
+    import java.util.Map;
+    import java.util.Timer;
+    import java.util.TimerTask;
+    import java.util.jar.Attributes;
+
+    public class SefareshGozariActivity extends AppCompatActivity implements ExampleAdapter_Ryv.onItemClickListener, ExampleAdapter_ProRyv.OnItemClickListenerPro {
+
+        public ExampleItem_model exampleModel_cat = new ExampleItem_model();
+        //public ExampleItem_ProModel exampleModel_pro;
+        public ExampleItem_ProModel exampleModel_pro = new ExampleItem_ProModel();
+        public ExampleAdapter_Ryv mExampleAdapter_Ryv;//آداپتور  cat RYV
+        public ExampleAdapter_ProRyv mExampleAdapter_ProRyv;//آداپتور RYV PRO
+        public ArrayList<ExampleItem_model> mExampleList;//آریه ای که لیست مواردcat RYV را در خود نگه میدارد.
+        public ArrayList<ExampleItem_ProModel> mExampleList_Pro;//آریه ای که لیست مواردpro RYV را در خود نگه میدارد.
+        public CategoryModel category = new CategoryModel();
+        public int public_ryv_pro_position;
+        SefareshGozariActivity sefareshGozariActivity;
+        ExampleItem_model currentItem;
+        Button btn_goto_homeactivity;
+        //String url = "http://171.22.27.135:9096/api/Person/GetInfoUser";
+        List<UserInfo> userInfoslist;
+        String recy_cat_api_url = "http://171.22.27.135:9099/api/CateGory/GetCateory";
+        //String recy_pro_api_url = "http://171.22.27.135:9099/api/CateGory/GetCategorySale?ID=10040";
+        //String recy_pro_api_url = "http://171.22.27.135:9099/api/CateGory/GetCategorySale?";
+        String recy_pro_api_url = "http://171.22.27.135:9099/api/CateGory/GetCategorySale?ID=";
+        String public_recy_pro_api_url;
+        Button btn_takmil_karid;
+        TextView txt_test_var;
+        //private RequestQueue mRequestQueue;
+        Thread thread;
+        Handler handler;
+        String ID2_;
+        String serverID;
+        Boolean flag_for_click = false;
+        Boolean adapterIsSet_flag = false;
+        private RecyclerView ryscrview_category;
+        private RecyclerView ryscrview_product;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_sefaresh_gozari);
+            setUpViews();
+            onCreateEvents();
+            getAllCategorys();
+            //getAllProductsByID();
+
+        }
+
+        private void onCreateEvents() {
+            Toast.makeText(this, "لطفا کمی صبر کنید.", Toast.LENGTH_SHORT).show();
+            btn_goto_homeactivity.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(SefareshGozariActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
+
+        private void getAllCategorys() {
+
+            final JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, recy_cat_api_url, null, new Response.Listener<JSONArray>() {
+                @Override
+                public void onResponse(JSONArray response) {
+                    try {
+                        for (int i = 0; i < response.length(); i++) {
+                            JSONObject jsonObject = response.getJSONObject(i);
+                            //CategoryModel category = new CategoryModel();
+                            /*
+                            جیسون ها رو از سرور میگیریم و داخل مدل کتگوری میریزیم
+                            category.setId(jsonObject.getInt("$id"));
+                            category.setName(jsonObject.getString("Name"));
+                            category.setID(jsonObject.getInt("ID"));
+
+                            در این قسمت اطلاعاتی که از سرور گرفتیم و
+                            داخل مدل کتگری ریختیم رو داخل مدل RYV میریزیم تا نمایش بده
+                            exampleModel_cat.setName(category.getName());
+                            exampleModel_cat.set$id(category.getId());
+                            exampleModel_cat.setID(category.getID());
+                            exampleModel_cat.setImage(category.getImage);//برای اپلود عکس هر کتگوری
+                            String Name = jsonObject.getString("Name");
+                            spinnerItems.add(Name);  ||  spinnerItems.add(model.getName());
+                            int $id = category.getId();
+                            String Name = category.getName();
+                            int ID = category.getID();
+                            */
+                            category.setId(jsonObject.getInt("$id"));
+                            category.setName(jsonObject.getString("Name"));
+                            category.setID(jsonObject.getInt("ID"));
+
+                            int $id = jsonObject.getInt("$id");
+                            String Name = jsonObject.getString("Name");
+                            int ID = jsonObject.getInt("ID");
+                            mExampleList.add(new ExampleItem_model($id, Name, ID));
+                        }
+                        mExampleAdapter_Ryv = new ExampleAdapter_Ryv(SefareshGozariActivity.this, mExampleList);
+                        ryscrview_category.setAdapter(mExampleAdapter_Ryv);
+                        mExampleAdapter_Ryv.setOnItemClickListener(SefareshGozariActivity.this);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(SefareshGozariActivity.this, "Error in connection", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SefareshGozariActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+                }
+            });
+            request.setRetryPolicy(new DefaultRetryPolicy(5000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+            requestQueue.add(request);
+        }
+
+        private void setUpViews() {
+            ryscrview_category = (RecyclerView) findViewById(R.id.ryscrview_category);
+            //ryscrview_product.setHasFixedSize(true);
+            ryscrview_category.setLayoutManager(new LinearLayoutManager(SefareshGozariActivity.this));
+
+            ryscrview_product = (RecyclerView) findViewById(R.id.ryscrview_product);
+            ryscrview_product.setHasFixedSize(true);
+            ryscrview_product.setLayoutManager(new LinearLayoutManager(SefareshGozariActivity.this));
+
+            //ryscrview_product.setAdapter(new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro));
+
+            mExampleAdapter_ProRyv = new ExampleAdapter_ProRyv(getApplicationContext(), mExampleList_Pro);
+            handler = new Handler();
+            thread = new Thread();
+            category = new CategoryModel();
+
+            mExampleList_Pro = new ArrayList<>(); //لیست آرایه محصولات pro
+            mExampleList = new ArrayList<>();
+            userInfoslist = new ArrayList<>();
+
+            exampleModel_cat = new ExampleItem_model(exampleModel_cat.get$id(), exampleModel_cat.getName(), exampleModel_cat.getID());
+            exampleModel_pro = new ExampleItem_ProModel(exampleModel_pro.get$id(), exampleModel_pro.getSupplier(), exampleModel_pro.getProductName(), exampleModel_pro.getProID());
+
+            btn_takmil_karid = (Button) findViewById(R.id.btn_takmil_karid);
+            txt_test_var = (TextView) findViewById(R.id.txt_test_var);
+            btn_goto_homeactivity = (Button) findViewById(R.id.btn_goto_homeactivity);
+            //exampleModel_cat = mExampleList.get(ryv_pro_position);
+        }
+
+        @Override
+        public void onItemClick(int position) {
+            flag_for_click = true;
+            mExampleList_Pro.clear();
+            ExampleItem_model exampleModel_cat = mExampleList.get(position);
+            final String cat_name = exampleModel_cat.getName();
+            final int ID = exampleModel_cat.getID();
+            public_ryv_pro_position = position;
+            String ID2 = Integer.toString(ID);
+            serverID = ID2;
+            ID2_ = ID2;
+            String link = recy_pro_api_url + ID2_;
+            public_recy_pro_api_url = link;
+            Log.d(public_recy_pro_api_url, "final_link");
+
+            getAllProductsByID();
+            txt_test_var.setText(exampleModel_cat.getName());
+
+            Toast.makeText(getApplicationContext(),
+                    "Name: " + exampleModel_cat.getName() + " ID: " +
+                            exampleModel_cat.getID() + " id: " +
+                            exampleModel_cat.get$id(), Toast.LENGTH_SHORT).show();
+
+            /*timer.scheduleAtFixedRate(new TimerTask() {
+                @Override
+                public void run() {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (mExampleList_Pro.size() != 0)
+                            {
+                                //mExampleList_Pro.clear();
+                                ryscrview_product.setAdapter(new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro));
+                                adapterIsSet_flag = true;
+                                //Toast.makeText(SefareshGozariActivity.this, "name : " + cat_name + " id : " + ID, Toast.LENGTH_SHORT).show();
+                                //txt_test_var.setText(cat_name);
+                            }
+                        }
+                    });
+                }
+            },1,500);
+            if (adapterIsSet_flag == true) {
+                timer.cancel();
+                Toast.makeText(this, "timer.cancel", Toast.LENGTH_SHORT).show();
+            }*/
+            //txt_test_var.setText(cat_name);
+            //Toast.makeText(SefareshGozariActivity.this, "name : " + cat_name + " id : " + ID, Toast.LENGTH_SHORT).show();
+
+
+            //getAllProductsByID();
+            /*if(mExampleList_Pro == null)
+            {
+                Toast.makeText(this, "mExampleList_Pro is null", Toast.LENGTH_SHORT).show();
+            }
+            else if(mExampleList_Pro !=null) {
+                Toast.makeText(this, "mExampleList_Pro !=null", Toast.LENGTH_SHORT).show();
+            }
+            if(mExampleList_Pro.size()>0)
+            {
+                Toast.makeText(this, "mExampleList_Pro.size()>0", Toast.LENGTH_SHORT).show();
+            }*/
+            /*  ryscrview_product.setAdapter(new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro));
+            Toast.makeText(SefareshGozariActivity.this, "name : " + cat_name + " id : " + ID, Toast.LENGTH_SHORT).show();
+            txt_test_var.setText(cat_name);
+
+            int size = mExampleList_Pro.size();
+            String Ssize = Integer.toString(size);
+            Log.d(Ssize, "Ssize");
+
+            if (mExampleList_Pro.size() > 0) {
+                //mExampleList_Pro.clear();
+                Toast.makeText(this, "clear", Toast.LENGTH_SHORT).show();
+            }
+
+            else {
+                Toast.makeText(this, "OOPs i", Toast.LENGTH_SHORT).show();
+            }*/
+            //mExampleAdapter_ProRyv = new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro);
+            //ryscrview_product.setAdapter(mExampleAdapter_ProRyv);
+            /*String ID2 = Integer.toString(ID);
+            ID2_ = ID2;
+            String link = recy_pro_api_url + ID2_;
+            public_recy_pro_api_url = link;
+            Log.d(public_recy_pro_api_url, "final_link");*/
+            //String text = exampleModel_cat.getName();
+            //ID = category.getID();
+            /*
+            thread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        String ID2 = Integer.toString(ID);
+                        serverID = ID2;
+                        ID2_ = ID2;
+                        String link = recy_pro_api_url + ID2_;
+                        public_recy_pro_api_url = link;
+                        Log.d(public_recy_pro_api_url, "final_link");
+                        Thread.sleep(0);
+                        getAllProductsByID();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            //mExampleAdapter_ProRyv = new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro);
+                            //ryscrview_product.setAdapter(mExampleAdapter_ProRyv);
+                            ryscrview_product.setAdapter(new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro));
+                            Toast.makeText(SefareshGozariActivity.this, "name : " + cat_name + " id : " + ID, Toast.LENGTH_SHORT).show();
+                            txt_test_var.setText(cat_name);
+                        }
+                    });
+                }
+            });
+            thread.start();
+
+             */
+            /*mExampleAdapter_ProRyv = new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro);
+            ryscrview_product.setAdapter(mExampleAdapter_ProRyv);*/
+        }
+
+        /*private void generateProductLink(int position) {
+            String url = String.format("http://171.22.27.135:9099/api/CateGory/GetCategorySale?ID=", position);
+        }*/
+        /*private void createFinalLink() {
+            String text = exampleModel_cat.getName();
+            int ID = exampleModel_cat.getID();
+            //ID = category.getID();
+            String ID2 = Integer.toString(ID);
+            ID2_ = ID2;
+            String link = recy_pro_api_url + ID2_;
+            public_recy_pro_api_url = link;
+            Log.d(public_recy_pro_api_url, "final_link");
+        }*/
+
+        private void getAllProductsByID() {
+
+            StringRequest stringRequest = new StringRequest(Request.Method.GET, public_recy_pro_api_url, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try {
+                        JSONArray jsonArray = new JSONArray(response);
+                        //mExampleList_Pro = new ArrayList<ExampleItem_ProModel>();
+                        for (int i = 0; i < response.length(); i++) {
+                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+                            //ExampleItem_ProModel exampleModel_pro = mExampleList_Pro.get(i);
+
+                            exampleModel_pro.set$id(jsonObject.getInt("$id"));
+                            exampleModel_pro.setProductName(jsonObject.getString("ProductName"));
+                            exampleModel_pro.setSupplier(jsonObject.getString("Supplier"));
+                            exampleModel_pro.setProID(jsonObject.getInt("proID"));
+
+                            int $Id = jsonObject.getInt("$id");
+                            String ProductName = jsonObject.getString("ProductName");
+                            String Supplier = jsonObject.getString("Supplier");
+                            int proid = jsonObject.getInt("proID");
+
+                            //mExampleList_Pro.add(new ExampleItem_ProModel($Id, ProductName, Supplier));
+                            mExampleList_Pro.add(new ExampleItem_ProModel(exampleModel_pro.get$id(), exampleModel_pro.getProductName(), exampleModel_pro.getSupplier(), exampleModel_pro.getProID()));
+
+                            Timer timer = new Timer();
+                            timer.scheduleAtFixedRate(new TimerTask() {
+                                @Override
+                                public void run() {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if (mExampleList_Pro.size() != 0) {
+                                                if (flag_for_click == true) {
+                                                    //mExampleList_Pro.clear();
+                                                    ryscrview_product.setAdapter(new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro));
+                                                    //mExampleAdapter_ProRyv.setOnItemClickListener(SefareshGozariActivity.this);
+                                                    adapterIsSet_flag = true;
+                                                    //Toast.makeText(SefareshGozariActivity.this, "name : " + cat_name + " id : " + ID, Toast.LENGTH_SHORT).show();
+                                                    flag_for_click = false;
+                                                }
+                                                mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                                            }
+                                            mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                                        }
+                                    });
+                                    mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                                }
+                            }, 1, 100);
+                            if (adapterIsSet_flag == true) {
+                                mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                                timer.cancel();
+                                //Toast.makeText(this, "timer.cancel", Toast.LENGTH_SHORT).show();
+                                Log.d("timer_cancel", "timer is canceled");
+                            }
+
+                            /*exampleModel_pro.set$id(jsonObject.getInt("$id"));
+                            exampleModel_pro.setProductName(jsonObject.getString("ProductName"));
+                            exampleModel_pro.setSupplier(jsonObject.getString("Supplier"));*/
+                            //Toast.makeText(SefareshGozariActivity.this, ProductName + " | " +Supplier, Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(SefareshGozariActivity.this, "got response", Toast.LENGTH_SHORT).show();
+                        }
+                        //mExampleAdapter_ProRyv = new ExampleAdapter_ProRyv(SefareshGozariActivity.this, mExampleList_Pro);
+                        //ryscrview_product.setAdapter(mExampleAdapter_ProRyv);
+                        //mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                        mExampleAdapter_ProRyv.setOnItemClickListenerPro(SefareshGozariActivity.this);
+                    } catch (JSONException e) {
+                        //Toast.makeText(SefareshGozariActivity.this, "failed", Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(SefareshGozariActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SefareshGozariActivity.this, "got error", Toast.LENGTH_SHORT).show();
+                }
+            }) {
+                Map<String, String> params = new HashMap<>();
+
+                @Override
+                public Map<String, String> getParams() {
+                    params.put("ID", ID2_);
+                    return params;
+                }
+            };
+            RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+            requestQueue.add(stringRequest);
+        }
+
+        @Override
+        public void onItemClickPro(int position_pro) {
+            //ExampleItem_model exampleModel_cat = mExampleList.get(position);
+            try {
+                ExampleItem_ProModel exampleModel_pro = mExampleList_Pro.get(position_pro);
+                Toast.makeText(sefareshGozariActivity, "position: " + position_pro, Toast.LENGTH_SHORT).show();
+            } catch (Exception ee) {
+                Log.i("notCLICKED", "onItemClickPro: ");
+                ee.printStackTrace();
+            }
+        }
+
+        /*@Override
+        public void onItemClickPro(int position) {
+            Log.i("is_clicked", "clicked iii");
+            ExampleItem_ProModel exampleModel_pro = mExampleList_Pro.get(position);
+            Toast.makeText(sefareshGozariActivity, "$id: "+exampleModel_pro.getProID(), Toast.LENGTH_SHORT).show();
+        }*/
+    }
+
+    //---------- timer
+
+    /*timer2.scheduleAtFixedRate(new TimerTask() {
+                @Override
+                public void run() {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                timerFlag = true;
+                                dialogFlag = true;
+                                if (timerFlag == true) {
+                                    timer2.cancel();
+                                    //dialog_load.cancel();
+                                    //dialog_load.dismiss();
+                                    Log.d("timer2_cancel", "timer 2 is canceled");
+                                    dialog_load.setCancelable(true);
+                                }
+
+                                if (mExampleList.size() != 0) {
+                                    dialog_load.cancel();
+                                    dialog_load.dismiss();
+                                }
+                            }
+                            catch (Exception e) {
+                                e.printStackTrace();
+                                Log.d("exception", "exception");
+                            }
+                        }
+                    });
+                }
+            },2500,3000);*/
+
+            //----------
+
+            /*if (!item_state) { // item_state != true | !item_state
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_);
+                                    int pro_id;
+                                    pro_id = currentItem.getProID();
+                                    selected_pro_items.add(pro_id);
+                                    item_state = true;
+                                } else {
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_24dp);
+                                    int pro_id;
+                                    pro_id = currentItem.getProID();
+                                    selected_pro_items.remove(pro_id);
+                                    item_state = false;
+                                }*/
+
+                                //Boolean isSelected_enter = isSelected_exter;
+                                /*boolean static_state;
+                                Boolean isSelected_enter = false;
+
+                                if (isSelected_enter == false) {
+                                    isSelected_enter = true;
+                                } else if (isSelected_enter == true) {
+                                    isSelected_enter = false;
+                                }
+                                if (isSelected_enter == false) {
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_24dp);
+                                    Toast.makeText(mContextPro, "removed from basket", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_);
+                                    Toast.makeText(mContextPro, "added to basket", Toast.LENGTH_SHORT).show();
+                                    static_state = isSelected_enter;
+                                }*/
+                                /*if (isSelected_enter == false) {
+                                    isSelected_enter = true;
+                                } else if (isSelected_enter == true) {
+                                    isSelected_enter = false;
+                                }
+                                if (isSelected_enter == false) {
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_24dp);
+                                    Toast.makeText(mContextPro, "removed from basket", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_);
+                                    Toast.makeText(mContextPro, "added to basket", Toast.LENGTH_SHORT).show();
+                                }*/
+                            /*selected_pro_items.add(currentItem.getProID());
+                            sendSelectedIDArray();
+                            holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_);*/
+                            /*int listSize = selected_pro_items.size();
+                                for (int i = 0; i < listSize; i++) {
+                                    Log.i("array_vall", selected_pro_items.get(i).toString());
+                                }*/
+
+
+                                //***********************
+
+                public Boolean is_selected = false;
+
+                if (!is_selected) {
+                    //holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_);
+                    selected_pro_items.add(currentItem.getProID());
+                    Log.i("ch_array", selected_pro_items.toString());
+                } else {
+                    //holder_pro.btn_add_pro_item_to_basket.setImageResource(R.drawable.ic_add_shopping_cart_black_24dp);
+                    Integer i = currentItem.getProID();
+                    selected_pro_items.remove(i);
+                    Log.i("ch_array", selected_pro_items.toString());
+                }
+                is_selected = !is_selected;
+
+
+
+                //*****
+
+
+                android.useAndroidX=true
+                gradle propertis
+
+                //***********
+
+
+
+                apply plugin: 'com.android.application'
+
+                android {
+                    compileSdkVersion 28
+                    defaultConfig {
+                        applicationId "com.example.test.botom_nav_test"
+                        minSdkVersion 21
+                        targetSdkVersion 28
+                        versionCode 1
+                        versionName "1.0"
+                        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+                    }
+                    buildTypes {
+                        release {
+                            minifyEnabled false
+                            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                        }
+                    }
+                }
+
+                dependencies {
+                    implementation fileTree(dir: 'libs', include: ['*.jar'])
+                    implementation 'com.android.support:appcompat-v7:28.0.0'
+                    implementation 'com.android.support:design:28.0.0'
+                    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+                    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+                    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+                    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+                    // android x {
+                    implementation 'androidx.appcompat:appcompat:1.1.0'
+                    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+                    //implementation 'android.appcompat:appcompat:1.1.0'
+                    //implementation 'android.constraintlayout:constraintlayout:1.1.3'
+
+                    //implementation "androidx.appcompat:appcompat:1.1.0"
+                    //implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta4'
+
+                    // }
+
+                    testImplementation 'junit:junit:4.12'
+                    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+                    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+                    //added
+
+                    //CardView
+                    implementation 'com.android.support:cardview-v7:28.0.0'
+
+
+                    //Button lib
+                    implementation 'com.github.medyo:fancybuttons:1.9.1'
+
+                    //volley
+                    implementation 'com.android.volley:volley:1.1.0'
+
+                    //SearchableSpinner
+                    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+                    //picasso
+                    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+                    //recycler_view
+                    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+                    //QRCode Library
+                    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+                }
+
+                //**** hava ui temp
+
+                <?xml version="1.0" encoding="utf-8"?>
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_background"
+                    tools:context=".HavashenasiActivity">
+
+                    <Button
+                        android:id="@+id/btn_goto_havashenasi_from_home"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_havashenasi_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:text="هواشناسی"
+                        android:textSize="24sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view_hava"
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp"
+                        android:layout_below="@+id/txt_havashenasi_title"
+                        android:layout_margin="45dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp">
+
+                        <!--<TableLayout
+                            android:padding="16dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:stretchColumns="0,1,2">
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF">
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="1dp"
+                                    android:layout_weight="1"
+                                    android:background="#000000">
+
+                                </TableRow>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="#000000">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="0"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Date "
+
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="1"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text="Miles "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text="Calories"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="#000000">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="0"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="1"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="#000000">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="0"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="1"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                android:background="#000000">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="0"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="1"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_margin="1dp"
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text=" Text" />
+                            </TableRow>
+
+                        </TableLayout>-->
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/weater_icon"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:src="@drawable/weater_icon"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <TextView
+                                android:hint="tehran - iran"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="18sp"
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_centerHorizontal="true"
+                                    android:hint="27"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textSize="18sp"
+                                    android:id="@+id/date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_toRightOf="@+id/date"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_centerHorizontal="true"
+                                    android:hint="15"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textSize="18sp"
+                                    android:id="@+id/temperature_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toRightOf="@+id/temperature_value"
+                                    android:layout_gravity="center_vertical|center_horizontal"
+                                    android:src="@drawable/icon_s"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"/>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="18sp"
+                                android:hint="description"
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                home.xml
+                //*****************
+
+                <?xml version="1.0" encoding="utf-8"?>
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tool="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/m3_bg">
+
+                    <!--android:background="#E8F4F8"-->
+
+                    <!--<TextView
+                        android:id="@+id/text_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />-->
+                    <!--
+                    <Button
+                        android:background="@drawable/logo"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/btn_link_to_site"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_centerInParent="true"
+                        android:textSize="20sp"
+                        android:text="لینک سایت"
+                        android:layout_below="@+id/btn_link_to_site"
+                        android:id="@+id/txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    -->
+
+                    <Button
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:background="@drawable/ic_account_circle_black_24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/btn_admin_login"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+
+                    <Button
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:background="@drawable/ic_settings"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/btn_settings"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+
+                    <Button
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:id="@+id/btn_link_to_site"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/txt_linktosite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_link_to_site"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/txt_link_to_site"
+                        android:textSize="18sp" />
+
+                    <!--<LinearLayout
+                        android:layout_below="@+id/txt_linktosite"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_agahi_ha"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_agahi_ha"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_riz_kharidha"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_riz_kharid"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_sefaresh"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_sefaresh_gozari"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_shora_va_dehyari"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_shorayari"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_list_alayeq"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_list_alayeq"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="16dp">
+
+                            <Button
+                                android:fontFamily="@font/app_font"
+                                android:id="@+id/btn_ertebat_ba_derje"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="@string/btn_ertebat_ba_derje"
+                                android:textSize="24sp"
+                                android:textStyle="normal" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/lin_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_linktosite"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ScrollView
+                            android:fillViewport="false"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_agahi_ha"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/btn_agahi_ha"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_riz_kharidha"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/btn_riz_kharid"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_sefaresh"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/btn_sefaresh_gozari"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_shorayari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="شورایاری"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_berim_khor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="بریم خور"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_vazayefvadarkast"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="وظایف,درخواست"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                        <ScrollView
+                            android:fillViewport="true"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_shora_va_dehyari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/btn_shorayari"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_list_alayeq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/btn_list_alayeq"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_radiabi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="ردیابی"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_maharatha"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="مهارت ها"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_amaliat_pardakt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="عملیات پرداخت"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:focusable="true"
+                                    android:clickable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:layout_margin="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="16dp"
+                                    app:cardCornerRadius="16dp">
+
+                                    <Button
+                                        android:fontFamily="@font/app_font"
+                                        android:id="@+id/btn_havashenasi"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:text="هواشناسی"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+manidest
+//***************************************************************
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.test.botom_nav_test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashScreen.SplashActivity"></activity>
+        <activity android:name=".AgahiSubActivitys.ForoshKalaDastDoActivity" />
+        <activity android:name=".AgahiSubActivitys.HarajiActivity" />
+        <activity android:name=".AgahiSubActivitys.TabliqatActivity" />
+        <activity android:name=".AgahiSubActivitys.EtelaShoraDehyarActivity" />
+        <activity android:name=".SefareshgozariSubActivitys.WebBasketActivity" />
+        <activity android:name=".ShoraDehyariSubActivitys.DehyariActivity" />
+        <activity android:name=".ShoraDehyariSubActivitys.ShoraActivity" />
+        <activity android:name=".SefareshgozariSubActivitys.SefareshBasket" />
+        <activity android:name=".ApardaktSubActivitys.QrCodeActivity" />
+        <activity android:name=".SefareshgozariSubActivitys.SefareshProDetail" />
+        <activity android:name=".TestingAPI.SoranApiTest" />
+        <activity android:name=".MainMenuActivitys.VazayfDarkastActivity" />
+        <activity android:name=".MainMenuActivitys.ShorayariActivity" />
+        <activity android:name=".MainMenuActivitys.HavashenasiActivity" />
+        <activity android:name=".MainMenuActivitys.MaharatActivity" />
+        <activity android:name=".MainMenuActivitys.AmaliatPardaktActivity" />
+        <activity android:name=".LoginSigninActivitys.AdminSigninActivity" />
+        <activity android:name=".SettingsActivity.SettingsActivity" />
+        <activity android:name=".MainMenuActivitys.RadiabiActivity" />
+        <activity android:name=".LoginSigninActivitys.AdminLoginActivity" />
+        <activity android:name=".SettingsSubActivitys.TamasDerjeActivity" />
+        <activity android:name=".MainMenuActivitys.ListAlayeqActivity" />
+        <activity android:name=".MainMenuActivitys.ShoraDehyariActivity" />
+        <activity android:name=".MainMenuActivitys.SefareshGozariActivity" />
+        <activity android:name=".MainMenuActivitys.RizkharidActivity" />
+        <activity android:name=".MainMenuActivitys.AgahiActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+//**************************************** utube splash ui
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen.SplashActivity">
+
+    <ImageView
+        android:id="@+id/clover"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="190dp"
+        android:elevation="6dp"
+        android:src="@mipmap/clover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/textsplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دِرجه"
+            android:textColor="#FFF"
+            android:textSize="36sp" />-->
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دَریچه ای برای دیده شدن"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:layout_marginTop="140dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="لطفا صبر کنید"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!--android:translationY="-700dp"-->
+    <ImageView
+        android:id="@+id/bgapp"
+        android:layout_width="526dp"
+        android:layout_height="900dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bgapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

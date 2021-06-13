@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".LoginSigninActivitys.AdminSigninActivity">
+
+    <Button
+        android:id="@+id/btn_goto_home_from_admin_signin"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="عضویت کاربَر"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edttext_signin_username"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/edttxt_login_signin_shape"
+        android:hint="Enter username..."
+        android:maxLength="32"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:textColor="#7D7D7D"
+        android:textColorHint="#707070"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edttext_signin_enter_password"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edttext_signin_username"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/edttxt_login_signin_shape"
+        android:hint="Enter password..."
+        android:inputType="textPassword"
+        android:maxLength="32"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:textColor="#7D7D7D"
+        android:textColorHint="#707070"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edttext_signin_confirm_password"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edttext_signin_enter_password"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/edttxt_login_signin_shape"
+        android:hint="Confirm password..."
+        android:inputType="textPassword"
+        android:maxLength="32"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#707070"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/edttext_signin_confirm_password"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_login_signin_shape"
+        android:text="sign in"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_signin"
+        android:layout_centerInParent="true"
+        android:text="حساب کاربری دارید؟"
+        android:textColor="#FF0E5CE0" />
+
+</RelativeLayout>

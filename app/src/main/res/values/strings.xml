@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My Derje</string>
+    <string name="title_home">My Derje</string>
+    <string name="title_dashboard">Site</string>
+    <string name="title_info">About Us</string>
+
+    <string name="txt_link_to_site">هدایت به سایت</string>
+    <string name="btn_agahi_ha">آگهی ها</string>
+    <string name="btn_riz_kharid">ریز خرید ها</string>
+    <string name="btn_sefaresh_gozari">سفارش گذاری</string>
+    <string name="btn_shorayari">شورا و دهیاری</string>
+    <string name="btn_list_alayeq">علاقه مندی ها</string>
+    <string name="btn_ertebat_ba_derje">تماس با دِرجه</string>
+    <string name="act_agahi_txt_agahiha">لیست آگهی ها</string>
+
+    // agahi spinner
+
+    <string-array name="agahi_list">
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+        <item>item 5</item>
+        <item>item 6</item>
+    </string-array>
+
+    //agahi listview
+
+    <string-array name="agahi_listview">
+        <item>item 1</item>
+        <item>item 2</item>
+        <item>item 3</item>
+        <item>item 4</item>
+        <item>item 5</item>
+        <item>item 6</item>
+    </string-array>
+
+    <string name="act_adminlogin_pass_edttext_hint">Password...</string>
+    <string name="act_adminlogin_username_edttext_hint">Username...</string>
+    <string name="act_adminlogin_login_btn_text">Log in</string>
+
+</resources>

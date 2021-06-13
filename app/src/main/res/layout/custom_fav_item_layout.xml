@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_fav_item_layout_card"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/card_fav_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:id="@+id/imgview_custom_fav_item_layout"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_favorite_border_black_24dp_unlike" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/lin_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/card_fav_image"
+            android:layout_toRightOf="@+id/btn_remove_from_fav">
+            <!--android:layout_toLeftOf="@+id/imgview_custom_fav_item_layout"-->
+
+            <!--<TextView
+                android:id="@+id/txtview_custom_fav_item_layout_proname"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="ProID"
+                android:textColor="#FA0000"
+                android:textSize="10sp" />-->
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/txtview_custom_fav_item_layout_proname"
+
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="ProID"
+                android:textSize="12sp"
+                app:trimCollapsedText="Show less"
+                app:trimExpandedText="Show more"
+                app:trimLength="20"
+                app:trimMode="trimModeLength"/>
+            <!--style="@style/setFont"-->
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/txtview_custom_fav_item_layout_prosupliier"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/txtview_custom_fav_item_layout_proname"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="ProName"
+                android:textSize="12sp"
+                app:trimCollapsedText="Show less"
+                app:trimExpandedText="Show more"
+                app:trimLength="20"
+                app:trimMode="trimModeLength"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_remove_from_fav"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_delete_black_24dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

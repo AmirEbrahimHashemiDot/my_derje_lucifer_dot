@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="130dp">
+
+        <ProgressBar
+            android:layout_margin="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/loading"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/iransans"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="در حال بارگذاری ..." />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

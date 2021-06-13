@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_bahare_item"
+    android:layout_width="120dp"
+    android:layout_height="210dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/img_mive_bahare_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="4"
+            android:scaleType="fitCenter"
+            android:src="@drawable/account_icon" />
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:id="@+id/txtV_mive_bahare_item_pro_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:text="گیلاس تک دانه مُمتاز"
+            android:textSize="14sp" />
+
+        <TextView
+            android:fontFamily="@font/iransans"
+            android:id="@+id/txtV_mive_bahare_item_pro_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:text="250'000 R"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

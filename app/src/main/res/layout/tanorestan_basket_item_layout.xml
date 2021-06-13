@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_basket_item_layout_card"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imd_card_basket"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/imgview_tan_basket_item_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ic_favorite_black_24dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/lin_item_tan_basket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imd_card_basket"
+            android:layout_toEndOf="@+id/btn_remove_from_tanor_basket">
+            <!--android:layout_toLeftOf="@+id/imgview_custom_fav_item_layout"-->
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/txt_tanorestan_basket_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="نام محصول"
+                android:lines="4"
+                android:textSize="12sp"
+                app:trimCollapsedText="@string/read_more"
+                app:trimExpandedText="@string/read_more"
+                app:trimLength="18"
+                app:trimMode="trimModeLength" />
+
+            <TextView
+                android:id="@+id/txt_tanorestan_basket_desc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="تهیه کننده"
+                android:lines="4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_tanorestan_basket_price"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="قیمت"
+                android:lines="2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_tanorestan_basket_count"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/iransans"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="تعداد"
+                android:lines="2"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_remove_from_tanor_basket"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_delete_black_24dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

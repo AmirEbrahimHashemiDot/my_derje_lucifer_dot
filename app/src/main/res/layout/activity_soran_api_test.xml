@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestingAPI.SoranApiTest">
+
+    <TextView
+        android:id="@+id/txt_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="راسته را انتخاب کنید." />
+
+    <Spinner
+        android:id="@+id/spn_category"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txt_v"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spn_category"
+        android:layout_centerHorizontal="true"
+        android:text="محصول را انتخاب کنید." />
+
+    <Spinner
+        android:id="@+id/spn_product"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txt_v2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_req"
+
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/spn_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_sefareshgozari_shape"
+        android:text="تکمیل خرید" />
+    <!--style="@style/setFont"-->
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_req"
+        android:id="@+id/txt_view"
+        android:background="#E9A6A6"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+</RelativeLayout>

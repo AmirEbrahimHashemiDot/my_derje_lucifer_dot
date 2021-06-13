@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".SettingsSubActivitys.TamasDerjeActivity">
+
+    <Button
+        android:id="@+id/btn_goto_settingsactivity"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txtlistagahi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/btn_ertebat_ba_derje"
+        android:textSize="24sp" />
+
+    <!--
+    <TextView
+        android:textSize="20sp"
+        android:text="www.derje.ir"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_website"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"/>
+
+    <TextView
+        android:layout_below="@+id/txt_website"
+        android:textSize="20sp"
+        android:text="derje@info.com"
+        android:layout_centerInParent="true"
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"/>
+    -->
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp"
+        android:id="@+id/lin_main_info"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_web_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="www.derje.ir"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:background="#4E4D4D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_email_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="derje@info.com"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:background="#4E4D4D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="021-881188**"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:background="#4E4D4D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="4dp"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="میدان ونک، خیابان آرارات"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_copy_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lin_main_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_content_copy_black_24dp" />
+
+</RelativeLayout>
+
+

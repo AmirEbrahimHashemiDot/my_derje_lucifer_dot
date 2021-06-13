@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/android_bg_3"
+    tools:context=".SefareshgozariSubActivitys.SefareshBasket">
+
+    <Button
+        android:id="@+id/btn_goto_Sefareshgozary_from_basket"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txt_basket_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="سبد خرید"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/final_selected_pro_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/txt_basket_title"
+        android:layout_above="@+id/card_karid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_karid"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <Button
+
+            android:background="#95A3C1"
+            android:text="تکمیل خرید"
+            android:id="@+id/btn_karid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--style="@style/setFont"-->
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

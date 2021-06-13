@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity.SettingsActivity"
+    android:background="@mipmap/android_bg_3">
+
+    <Button
+        android:id="@+id/btn_goto_homeactivity_from_settings"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txtsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="تنظیمات"
+        android:textSize="24sp" />
+
+    <!--<androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
+
+        <Button
+            android:layout_margin="3dp"
+            android:fontFamily="@font/app_font"
+            android:id="@+id/btn_ertebat_ba_derje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="ارتباط با دِرجه"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

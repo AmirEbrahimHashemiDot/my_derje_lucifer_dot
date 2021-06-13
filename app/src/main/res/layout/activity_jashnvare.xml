@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constr_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainMenuActivitys.KaridMiveTazeActivity_newUI">
+
+    <!--android:background="@mipmap/android_bg_3"-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_mive_bahare"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/spring_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_mive_tabestane"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/summer_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_mive_paieze"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/autumn_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_mive_zemestane"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/winter_icon" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_goto_home_from_jashnvare"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:background="@drawable/ic_back_btn_black" />
+
+        <!--android:background="@drawable/ic_keyboard_arrow_left_black_24dp"-->
+
+        <TextView
+            android:id="@+id/txtlistagahi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/iransans"
+            android:text="جشنواره پاییزه"
+            android:textColor="#2f2f2f"
+            android:textSize="24sp" />
+
+        <!--android:textColor="#ffffff"-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#CF0820"
+            app:tabTextColor="#1E1919"
+            app:tabSelectedTextColor="#F30303"
+            app:tabIndicatorFullWidth="true"
+            android:id="@+id/tab_list_layout"
+            app:tabMode="fixed"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <!--app:tabTextColor="#FFFFFF"-->
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mive_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
